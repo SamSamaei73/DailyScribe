@@ -1,0 +1,25 @@
+font-face {
+  font-family: 'Nazanin';
+  src: local('Nazanin'), url(./font/Far.Nazanin.ttf) format('ttf');
+  
+}
+font-face {
+  font-family: 'Nasr';
+  src: local('Nasr'), url(./font/A\ Nasr.ttf) format('ttf');
+  
+}
+
+
+body {
+  margin: 0;
+  font-family: 'nazanin';
+  font-size: 20px;
+ 
+}
+h1{
+  font-family: 'Nasr';
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

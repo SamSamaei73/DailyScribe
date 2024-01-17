@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Mj_Casablanca-Heavy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/Mj_Casablanca-Heavy.ttf"); /* IE9 Compat Modes */
+  src: local("Mj_Casablanca-Heavy"), local("Mj_Casablanca-Heavy");
+}
+@font-face {
+  font-family: "B-Ziba";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/B-Ziba_0.ttf"); /* IE9 Compat Modes */
+  src: local("B-Ziba"), local("B-Ziba");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  font-family: "yekan" , tahoma ;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin: auto;
+}
+h1 {
+  font-family: "yekan" , tahoma;
+}
+
+/* /////////////////////////////////////////////////////App///////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 565px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5px;
+    ;
+  }
+}
+@media only screen and (min-width:566px) and  (max-width:900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5px;
+  }
+}

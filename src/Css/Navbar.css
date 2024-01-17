@@ -1,0 +1,427 @@
+
+@font-face {
+    font-family: 'Yekan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/Yekan.ttf'); /* IE9 Compat Modes */
+    src: local('Yekan'), local('Yekan'),
+        
+  }
+@font-face {
+    font-family: 'Mj_Casablanca-Heavy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/Mj_Casablanca-Heavy.ttf'); /* IE9 Compat Modes */
+    src: local('Mj_Casablanca-Heavy'), local('Mj_Casablanca-Heavy'),
+        
+  }
+@font-face {
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/Roboto-Light.ttf'); /* IE9 Compat Modes */
+    src: local('Roboto-Light'), local('Roboto-Light'),
+        
+  }
+
+
+#Navbar {
+    display: flex;
+    /* background: url(../img/dailymovie.mov) no-repeat center center/cover; */
+    background-attachment: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#Navbar video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 60px;
+}
+#primery{
+    color: #fccc13;
+    /* color: #FC9918; */
+}
+.active{
+    border: 2px solid red;
+}
+#Navbar .Shadow {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.533);
+}
+#Navbar .Header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+#Navbar .NavbarLogo {
+    width: 9rem;
+    height: 7rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Navbar .NavbarLogo img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+    
+#Navbar .NavbarInfo {
+    width: 50rem;
+    height: 5rem;
+    color: black;
+    
+
+}
+#Navbar .NavbarInfo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float: right;
+
+}
+#Navbar .NavbarInfo ul li {
+    color: black;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'yekan';
+    background-color: #c9c9c98c;
+    border-radius: 10px;
+
+
+}
+#Navbar .NavbarInfo ul li a{
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'yekan';
+    color: black;
+    border-radius: 10px;
+
+
+
+}
+#Navbar .NavbarInfo ul li:hover{
+    background-color: rgba(145, 111, 83, 0.521);
+    border-radius: 10px;
+    color: #fff;
+
+}
+#Navbar .exclamation{
+    width: 2rem;
+    height: 2rem;
+    position:absolute;
+    margin-top: -4rem;
+    margin-left: -1.5rem;
+}
+#Navbar .exclamation img{
+    width: 3rem;
+    
+}
+
+
+#Navbar  .information{
+    width: 80%;
+    margin-top: 12vh;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    animation-name: anime;
+    animation-duration: 2s;
+}
+#Navbar .information p{
+    margin-top: 1rem;
+    font-family:'Roboto-Light' ;
+    font-size: 40px;
+}
+#Navbar .information h1{
+    font-family: "Mj_Casablanca-Heavy";
+}
+#Navbar .information button{
+    font-family: "Mj_Casablanca-Heavy";
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    color: #fff;
+    background-color: rgba(255, 222, 173, 0);
+    border: 1px solid #fccc13;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#Navbar .information button:hover{
+    background-color: #fccc13;
+    color: black;
+}
+@keyframes anime {
+    from{
+        margin-top: 20rem;
+    }
+    to{
+        margin-top: 12vh;
+    }
+}
+
+
+#Navbar .imghand{
+  z-index: 1;
+}
+
+
+/* /////////////////////////////////////////////////////App///////////////////////////////////////////////////////////// */
+
+
+@media (max-width:565px){ 
+    #Navbar {
+        display: flex;
+        margin: auto;
+        width:  100%;
+        height: 25rem;
+        align-items: center;
+
+    }
+   
+    #Navbar .NavbarInfo {
+        display: none;
+
+    }
+    #Navbar .Header {
+        justify-content: center;  
+    }
+   
+    #Navbar .information{
+        margin-right: 0rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+    }
+    #Navbar .information p{
+        font-size: 20px;
+        line-height: 45px;
+    }
+    #Navbar .information h1{
+
+     font-size: 40px; 
+   }
+
+}
+@media only screen and (min-width:566px) and  (max-width:900px) {
+  #Navbar .NavbarInfo ul li {
+    padding: 0.5rem;
+    font-size: 12px;
+
+}
+
+#Navbar .information p{
+  font-size: 25px;
+}
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+  
+  
+  /*
+   * Animated CSS button
+   * Copyright Alexander Bodin 2019-09-07
+   *
+   * Useage: .class {@import button($button-size, $hue, $sat);}
+   */
+  .animated-button {
+    padding: 20px 40px;
+    margin: 12px;
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #d4e0f7;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #8592ad;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+  }
+  
+  .animated-button:hover::before {
+    opacity: 0.2;
+  }
+  
+  .animated-button span {
+    position: absolute;
+  }
+  
+  .animated-button span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#FC9918));
+    background: linear-gradient(to left, rgba(8, 20, 43, 0), #FC9918);
+    -webkit-animation: 2s animateTop linear infinite;
+            animation: 2s animateTop linear infinite;
+  }
+  
+  @-webkit-keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  .animated-button span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 4px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#FC9918));
+    background: linear-gradient(to top, rgba(8, 20, 43, 0), #FC9918);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+            animation: 2s animateRight linear -1s infinite;
+  }
+  
+  @-webkit-keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  .animated-button span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#FC9918));
+    background: linear-gradient(to right, rgba(8, 20, 43, 0), #FC9918);
+    -webkit-animation: 2s animateBottom linear infinite;
+            animation: 2s animateBottom linear infinite;
+  }
+  
+  @-webkit-keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  .animated-button span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#FC9918));
+    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #FC9918);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+            animation: 2s animateLeft linear -1s infinite;
+  }
+  
+  @-webkit-keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }

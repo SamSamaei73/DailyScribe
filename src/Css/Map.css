@@ -1,0 +1,116 @@
+#Contact {
+  width: 100%;
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+#Contact .contactTittle {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 2rem;
+}
+#Contact .contactinfo {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem 2rem;
+  margin-top: 5rem;
+}
+#Contact .person {
+  height: 100%;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+#Contact .photoPerson1 {
+  width: 100%;
+  height: 55%;
+  background: url(../img/fereshteh.jpeg)
+    no-repeat center center/cover;
+  border-radius: 5px;
+}
+#Contact .photoPerson2 {
+  width: 100%;
+  height: 55%;
+  background: url(../img/zahra.jpeg)
+    no-repeat center center/cover;
+  border-radius: 5px;
+}
+
+#Contact .infoPerson {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 3rem;
+}
+#Contact .infoPerson a {
+  color: black;
+}
+#Contact .contactTittle p {
+ margin-top: 2rem;
+}
+#Contact .contactTittle .callWhats {
+ font-size: 45px;
+ color: green;
+}
+#Contact .callPerson {
+  width: 100%;
+  height: 15%;
+  background-color: #fccc13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
+}
+
+@media (max-width: 564px) {
+  #Contact {
+    height: 70rem;
+    margin-top: 2rem;
+  }
+  #Contact .contactinfo {
+    margin-top: -1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #Contact .person {
+    margin-bottom: 2rem;
+  }
+  
+  .contactTittle h1 {
+    font-size: 40px;
+  }
+  #Contact .contactTittle p {
+    font-size: 15px;
+    line-height: 2rem;
+    line-height: 3rem;
+   }
+}
+@media only screen and (min-width:566px) and  (max-width:900px) {
+
+  .contactTittle h1 {
+    font-size: 40px;
+  }
+  #Contact .contactTittle p {
+    font-size: 20px;
+    line-height: 2rem;
+    line-height: 3rem;
+   }
+   #Contact .contactinfo {
+    height: 60%;
+    padding: 0.5rem 1rem;
+  }
+  #Contact .person {
+    height: 90%;
+    width: 14rem;
+  }
+}

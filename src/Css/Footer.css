@@ -1,0 +1,242 @@
+font-face {
+    font-family: 'BLKCHCRY';
+    src: local('BLKCHCRY'), url(../font/BLKCHCRY.ttf) format('ttf');
+    
+  }
+
+#Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #1c2e38;
+    position: relative;
+    padding: 1rem;
+}
+#Footer .Company{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgb(206, 206, 206);
+    padding: 0.75rem;
+}
+#Footer .Creater{
+    display: flex;
+    flex-direction: column;
+    color: rgb(206, 206, 206);
+    padding: 0.5rem;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: tahoma;
+    width: 100%;
+    height: 20%;
+}
+#Footer .Creater p{
+    color: rgb(100, 100, 100);
+
+}
+#Footer .infoCom h1{
+    margin-bottom: 2rem;
+}
+
+
+
+#Footer .linkCompany h1{
+    font-size: 35px;
+    margin-bottom: 2rem;
+
+}
+#Footer .linkCompany ul {
+    list-style: none;
+
+}
+#Footer .linkCompany ul li a{
+    list-style: none;
+    color: red;
+
+}
+#Footer .linkCompany ul li a:hover{
+    list-style: none;
+    color: rgb(198, 221, 96);
+
+}
+
+#Footer .contactCompany{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 45%;
+    padding: 0.5rem;
+    direction: rtl;
+    justify-content: right;
+    margin-top: 4rem;
+    
+}
+#Footer .contactCompany .infoCom {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#Footer .contactCompany .infoCom h1 {
+    font-size: 35px;
+    color: rgb(206, 206, 206);
+    
+}
+#Footer .contactCompany .infoCom a{
+    margin-right: 1rem;
+    
+}
+#Footer .contactCompany .infoCom .phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+#Footer .contactCompany .infoCom .address p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#Footer .contactCompany .infoCom .address a{
+    color: rgb(206, 206, 206);
+    
+}
+#Footer .contactCompany .infoCom .address a:hover{
+    color: rgb(198, 221, 96);    
+}
+
+#Footer .contactCompany .infoCom .phone a{
+    color: rgb(206, 206, 206);
+      
+}
+#Footer .contactCompany .infoCom .email a{
+    color: rgb(206, 206, 206);
+    z-index: 100;
+      
+}
+#Footer .contactCompany .infoCom .phone a:hover{
+    color: rgb(198, 221, 96);
+    
+}
+#Footer .contactCompany .infoCom .email a:hover{
+    color: rgb(198, 221, 96);
+    
+}
+#Footer .contactCompany .infoCom .logCom {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#Footer .contactCompany .infoCom .logCom img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+#Footer .app {
+   
+ justify-content: center !important;    
+}
+
+#Footer .contactCompany .infoCom .logInfo {
+    height: 100%;
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    direction: rtl;
+}
+#Footer .aboutCompany {
+    width: 40%;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+#Footer .aboutCompany img{
+    width: 100%;
+    height: auto;
+    position:absolute;
+
+    }
+#Footer .samaei {
+    color: rgb(100, 100, 100);
+    display: inline;
+    font-size: 12px;
+    }
+#Footer .samaei:hover {
+    color: rgb(198, 221, 96);
+    
+    }
+    
+
+.workTime{
+    font-size: 15px;
+    color: red;
+}
+.workPlace{
+    justify-content: center !important;
+}
+
+
+@media (max-width:564px){ 
+    
+    #Footer .Company{
+        flex-direction: column;
+    }
+    #Footer .contactCompany{
+        width: 100%;
+        order: 1;
+    }
+    #Footer .aboutCompany {
+        width: 100%;
+        order: 2;
+    }
+    #Footer .Creater{
+        font-size: 8px;
+     }
+  
+}
+@media only screen and (min-width:566px) and  (max-width:900px) {
+  
+    #Footer {
+        padding: 0.5rem 0.25rem;
+    }
+    #Footer .contactCompany{
+        width: 50%;
+    }
+    #Footer .Creater{
+       font-size: 10px;
+    }
+    
+   
+    #Footer .infoCom h1{
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+    #Footer .contactCompany .infoCom a {
+       font-size: 12px;
+    }
+    #Footer .contactCompany .infoCom .address p{
+        font-size: 12px;
+        
+    }
+    #Footer .app {
+   
+        margin-left: 2rem;
+        
+    }
+ 
+  
+}
